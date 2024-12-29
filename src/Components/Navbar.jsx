@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 function Navbar() {
     return (
       <>
@@ -12,12 +14,11 @@ function Navbar() {
             <div>
               <ul className="flex space-x-6">
                 <li>
-                  <a
-                    href="{{ url_for('landing_page') }}"
+                  <Link to= "/"
                     className="text-white hover:scale-125 transition-transform px-3 py-2 rounded-lg hover:bg-white/20"
                   >
                     Home
-                  </a>
+                  </Link>
                 </li>
                 <li>
                   <a
@@ -36,20 +37,18 @@ function Navbar() {
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="{{ url_for('signup') }}"
+                  <Link to= "/register"
                     className="text-white hover:scale-125 transition-transform px-3 py-2 rounded-lg hover:bg-white/20"
                   >
                     Sign Up
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
-                    href="{{ url_for('signin') }}"
+                  <Link to= "/login"
                     className="text-white hover:scale-125 transition-transform px-3 py-2 rounded-lg hover:bg-white/20"
                   >
                     Login
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </div>

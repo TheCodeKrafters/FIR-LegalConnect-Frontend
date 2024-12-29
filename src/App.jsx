@@ -1,12 +1,13 @@
-import Navbar from "./Landing-page/Navbar"
+/* eslint-disable no-unused-vars */
+import React from "react";
+import { Outlet } from "react-router-dom";
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <Navbar />
-    </>
-  )
-}
+    <div>
+      <Outlet />
+    </div>
+  );
+};
 
-export default App
+export default App;

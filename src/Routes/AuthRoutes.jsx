@@ -3,6 +3,7 @@ import Login from "../Pages/Authenticate/Login";
 import App from "../App";
 import LandingPage from "../Pages/LandingPage/LandingPage";
 import SignUp from "../Pages/Authenticate/signup";
+import EmergencyHelpline from "../Pages/HelpLine/HelpLine";
 
 
 // function AuthRoutes() {
@@ -31,6 +32,10 @@ const authRoutes = createBrowserRouter([
       {
         path: "/register",
         element: <SignUp />,
+      },
+      {
+        path: "/helpline",
+        element: <EmergencyHelpline />
       },
     ],
   },
